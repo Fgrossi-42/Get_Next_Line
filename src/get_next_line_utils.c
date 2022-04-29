@@ -6,10 +6,11 @@
 /*   By: fgrossi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 11:49:20 by fgrossi           #+#    #+#             */
-/*   Updated: 2022/01/24 15:43:38 by fgrossi          ###   ########.fr       */
+/*   Updated: 2022/04/29 12:51:47 by fgrossi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "get_next_line.h"
+
+#include "../include/get_next_line.h"
 
 size_t	ft_strlen(const char *str)
 {

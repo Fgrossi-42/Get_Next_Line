@@ -6,11 +6,11 @@
 /*   By: fgrossi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 14:35:52 by fgrossi           #+#    #+#             */
-/*   Updated: 2022/01/24 15:46:15 by fgrossi          ###   ########.fr       */
+/*   Updated: 2022/04/29 12:51:22 by fgrossi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "get_next_line.h"
-#include <limits.h>
+
+#include "../include/get_next_line.h"
 
 char	*ft_free(char *str)
 {

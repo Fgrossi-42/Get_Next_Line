@@ -6,7 +6,7 @@
 /*   By: fgrossi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 11:41:32 by fgrossi           #+#    #+#             */
-/*   Updated: 2022/01/24 15:43:31 by fgrossi          ###   ########.fr       */
+/*   Updated: 2022/04/29 12:52:17 by fgrossi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include <string.h>
+# include <limits.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 50

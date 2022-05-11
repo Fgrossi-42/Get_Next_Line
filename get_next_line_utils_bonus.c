@@ -6,7 +6,7 @@
 /*   By: fgrossi <fgrossi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 17:20:39 by fgrossi           #+#    #+#             */
-/*   Updated: 2022/05/11 17:20:42 by fgrossi          ###   ########.fr       */
+/*   Updated: 2022/05/11 17:27:07 by fgrossi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ char	*ft_strchr(char *s, int c)
 	return (0);
 }
 
-char	*ft_new_dst(char *dst)
+char	*ft_new_buff(char *buff)
 {
 	size_t	len;
 	size_t	i;
@@ -77,20 +77,20 @@ char	*ft_new_dst(char *dst)
 
 	len = 0;
 	i = 0;
-	while (dst[i] != '\n' && dst[i] != '\0')
+	while (buff[i] != '\n' && buff[i] != '\0')
 		i++;
-	if (!dst[i])
+	if (!buff[i])
 	{
-		free(dst);
+		free(buff);
 		return (NULL);
 	}
-	tmp = (char *) malloc (sizeof(char) * (ft_strlen(dst) - i + 1));
+	tmp = (char *) malloc (sizeof(char) * (ft_strlen(buff) - i + 1));
 	if (!tmp)
 		return (NULL);
 	i++;
-	while (dst[i] != '\0')
-		tmp[len++] = dst[i++];
+	while (buff[i] != '\0')
+		tmp[len++] = buff[i++];
 	tmp[len] = '\0';
-	free(dst);
+	free(buff);
 	return (tmp);
 }
